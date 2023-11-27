@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template HTML dengan CSS Sederhana</title>
+    
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: #01010b;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+nav{
+    background: #fff;
+    border-radius: 50px;
+    padding: auto;
+    width: 50%;
+    display: inline-block;
+    margin: 32px 0;
+    text-decoration: none;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+    
+    
+}
+nav a {
+    text-decoration: none;
+    color: #040404;
+    
+    }
+
+    
+nav  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #040404;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.5s;
+    
+}
+
+nav  ul li::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+nav  ul li:hover {
+    color: #050505;
+}
+
+nav  ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #090909;
+    color: #fff;
+    
+}
+
+.wabutton{
+width:50px;
+height:50px;
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:100;
+}
+
+
+    </style>
+</head>
+<body>
+
+        
+        <div class="container">
+          
+        <nav>
+            <ul>
+                <a class="navbar-brand" href="#">HOME</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#PRODUCT">PRODUCT <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#CATEGORY">CATEGORY</a>
+                  </li>
+                <li class="nav-item">
+                    <a href="#CONTACT" class="nav-link">CONTACT</a>   
+                </li>
+                   
+            </ul>
+        </nav>
+        </div>
+        <br>
+        <center><font color='black'><h2>HOME</h2></font> 
+        <div class="HOME" id="HOME">
+        <div class="text-center mt-5 mb-5"><h4></h4></div>
+        <h5>PROFIL KU</h5>
+        <div class="list-group-item list-group-item-action">
+            <h5 class="mb-5">NAMA: Puspa</h5>
+            <p class="mb-5">Tempat Tanggal Lahir:jakarta-04-03-23</p>
+            <small>Anak ke: 3 dari 5 bersaudara</small>
+          </div>
+        </ul>
+    </nav>
+    </div>
+    <br>
+    <div class="list-group-item list-group-item-action">
+        <h5 class="mb-1">Univ:Unsulbar </h5>
+        <p class="mb-1">Fakultas:Teknik</p>
+        <small>Prodi:Informatika</small>
+      </div>
+    </ul>
+</nav>
+</div>
+<br>
+    <h5>ALAMAT</h5>
+        <div class="list-group-item list-group-item-action">
+            <h5 class="mb-1">Provinsi: Sulawesi Bara</h5>
+            <p class="mb-1">Kab:Mamuju Tengah</p>
+            <small>Kec:Karossa</small>
+        </ul>
+    </nav>
+    </div>
+    <br>
+    <div class="list-group-item list-group-item-action">
+        <h5 class="mb-1">Jln.poros majene-polewali</h5>
+        <p class="mb-1">Blok D11</p>
+        <small>Hijab Store</small>
+    </ul>
+</nav>
+</div>
+<br>
+<h5>CONTACT</h5>
+<div class="list-group-item list-group-item-action">
+    <h5 class="mb-1">Tiktok shope:Hijab Store</h5>
+    <p class="mb-1">Email: ulpa21@gmail.com</p>
+    <small>WA: 0853 4199 6395</small>
+</ul>
+</nav>
+</div>
+<br>
+        <center><font color='black'><h2>PRODUCT</h2></font> 
+    <div class="PRODUCT" id="PRODUCT">
+    <div class="text-center mt-5 mb-5"><h4>Product List</h4></div>
+    
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+              <a href="" class="a-Hubungi"><img src="1.jpg" width="200px" class="a.Hubungi"></a>
+              <p class="mt-3">Hijab Instan Ikat</p>
+              <h1 class="mt-3">Rp 30000</h1>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+              <a href="" class="a-Hubungi"><img src="hijab2.jpg" width="200px" class="a.Hubungi"></a>
+              <p class="mt-3">Hijab Instan Pett</p>
+              <h1 class="mt-3">Rp 250000</h1>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+              <a href="" class="a-Hubungi"><img src="3.jpg" width="200px" class="a.Hubungi"></a>
+              <p class="mt-3">Hijab Instan Pett</p>
+              <h1 class="mt-3">Rp 250000</h1>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+            <a href="" class="a-Hubungi"><img src="8.jpg" width="200px" class="a.Hubungi"></a>
+            <p class="mt-3">Hijab</p>
+            <h1 class="mt-3">Rp 250000</h1>
+            </div>    
+    <footer>
+        <p>Di Buat Oleh PUSPA</p>
+    </footer>
+</body>
+</html>
